@@ -1,0 +1,60 @@
+DAY 6 Task
+
+
+1.   https://github.com/rvsp/typescript-oops/blob/master/Practice/Movie.md
+
+
+
+
+class Movie {
+    constructor(title= '', studio = '', rating = 'PG') {
+       this.title = title;
+       this.studio = studio;
+       this.rating = rating;
+    }
+ 
+    getPG(movies = [], rating = '') {
+       return movies.filter((m) => m.rating === rating);
+    }
+}
+ 
+// SOLUTION FOR D
+const casionRoyaleMovie = new Movie('Casino Royale', 'Eon Productions', 'PG13');
+const leo = new Movie('Leo', 'LCU', 'PG');
+const vikram = new Movie('Vikram', 'Vijay', 'PG');
+const avatar = new Movie('Avatar: The water way', 'EROS', 'PG13');
+const avengers = new Movie('The avengers: End Game', 'LCU', 'PG');
+ 
+const moviesArray = [casionRoyaleMovie, leo, vikram, avatar, avengers];
+ 
+console.log(casionRoyaleMovie.getPG(moviesArray, 'R'));
+console.log(casionRoyaleMovie.getPG(moviesArray, 'PG'));
+
+2.  https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
+
+
+  class person{
+
+  constructor(name) {
+    this.name = name;
+  }
+
+  introduceSelf() {
+    console.log(`Hi! I'm ${this.name}`);
+  }
+
+  }
+
+
+3.write a class to calculate the uber price.
+
+
+
+ let distance = userInput[0];
+  var price = 3 * distance;
+  console.log(price);
+  var ubershare = 0.3*price;
+  console.log(ubershare);
+  var drivershare= 0.7*price;
+  console.log(drivershare);
+ 
